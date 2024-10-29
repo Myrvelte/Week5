@@ -1,0 +1,11 @@
+let partCode1 = "XYZ:1234-L"; 
+// 
+function parsePartCode(partCode) {
+    let space = partCode.split(":")
+    let hypen = space[1].split("-")
+    let hypenSize = partCode.split("-")
+    let name = {supplierCode: space[0], productNumber: hypen[0], blue: hypenSize[1]}
+    console.log(name.supplierCode + " "  + name.productNumber + " "  + name.blue )
+     
+}
+parsePartCode(partCode1)
